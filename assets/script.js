@@ -4,7 +4,7 @@ console.log("script loaded");
 
 $(document).ready(function() {
 
-    $("#currentDay").html(moment().format("dddd MMMM Do hh:mm:ss a"))
+
 
 
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     $('.saveBtn').on("click", whenSaved);
 
-
+    $("#currentDay").html(moment().format("dddd MMMM Do hh:mm:ss a"));
     //1,2,3,4,5 (6,7,8) 9,10,11,12
 
     //  var plan = localStorage.getItem(9);
