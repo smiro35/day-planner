@@ -19,8 +19,9 @@ $(document).ready(function() {
         localStorage.setItem(id, currentPlan);
 
         // now lets get all we've saved from local storage
+        localStorage.getItem(id);
 
-        localStorage.getItem(currentPlan);
+
     }
 
 
@@ -85,11 +86,11 @@ $(document).ready(function() {
             console.log("it is");
 
 
-            (intake).css("background", "red");
+            $(".hour").css("background", "red");
 
         } else {
 
-            (intake).css("background", "green");
+            $(".hour").css("background", "green");
 
         }
 
