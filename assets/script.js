@@ -45,47 +45,25 @@ $(document).ready(function() {
 
 
 
-    function colorScheme() {
+    function time() {
 
 
         var date = new Date(); //0-23
         console.log(date);
 
         var mins = date.getMinutes();
-        console.log(mins);
+        // console.log(mins);
 
         var hrs = date.getHours();
-        console.log(hrs);
+        // console.log(hrs);
 
         var past = (date - hrs) / Math.pow(1000, 4);
-        console.log(past);
-
-        //sets num3 to 123.456
-
-        if (hrs == 0) {
-
-            hrs == 12;
-
-        }
-        if (hrs == 12) {
-
-            hrs == h - 12;
-            console.log(this);
-
-        }
-
-
-
-
-        var intake = document.querySelectorAll("input");
-
+        // console.log(past);
 
 
         if (mins > 3) {
 
-            console.log("it is");
-
-
+            // console.log("it is");
             $(".hour").css("background", "red");
 
         } else {
@@ -94,46 +72,43 @@ $(document).ready(function() {
 
         }
 
-    }
-    colorScheme();
+
+    };
+
+    time();
+
+    // function twelve() {
+
+
+    //     if (hrs == 0) {
+
+    //         hrs == 12;
+
+    //     }
+    //     if (hrs == 12) {
+
+    //         hrs == h - 12;
+
+
+    //     }
+
+    // };
+
+    // twelve();
+
+
+
+
+
+
+
+
+
+
+
 
 });
 
-// console.log(date);
-
-// setTimeout(function() {
-
-//         var start = Date.now();
-//         var millis = Date.now() - start;
-
-//         console.log("seconds elapsed = " + Math.floor(millis / 1000));
-
-
-//         if (millis > 4) {
-
-//             alert("crazy")
-
-//         } else {
-
-//             alert("not greater")
-
-//         }
-
-
-
-// }
-// var h = Date.getHours(); //0-59
-// var m = Date.getMinutes(); //0-59
-
-// if (m > 45) {
-
-//     alert("crazy")
-
-// } else {
-
-//     alert("not greater")
-
-// }
 
 
 
@@ -143,23 +118,28 @@ $(document).ready(function() {
 
 
 
-//localStorage.setItem("first", "first item");
+
+
+
+
+
+//localStorage.setItem("key", "value");
 
 
 //console.log(localStorage.getItem("first"))
 
 
 /*
-                     we need to do something with the save Button. 
+we need to do something with the save Button. 
     
-                     the save button should have a click event
+the save button should have a click event
     
-                     the save button now also need to not submit the 
-                     info in the input box, but needs to save it to
-                     local storage. So, we need a fuction for this, and
-                     should be in relation to the click event. 
+the save button now also need to not submit the 
+info in the input box, but needs to save it to
+local storage. So, we need a fuction for this, and
+should be in relation to the click event. 
     
-                    */
+*/
 
 // Save button local storage function here
 
